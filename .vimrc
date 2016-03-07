@@ -31,7 +31,7 @@ set guifont=Bitstream\ Vera\ Sans\ Mono:h10
 
 set t_Co=256
 "" color wombat: enhanced wombat256 https://github.com/sheerun/vim-wombat-scheme
-colorscheme wombat
+colorscheme wombat256mod
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
