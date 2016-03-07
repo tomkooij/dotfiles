@@ -5,8 +5,25 @@ if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
 
+MACHINE="$(/bin/uname -n)"
+
+case $MACHINE in
+    lena*|tevere*)
+        # login[|2].nikhef.nl
+        PATH=$HOME/local/bin:$PATH
+        ;;
+    stbc*)
+        # stbc-[1-4].nikhef.nl
+        # some binaries do not run on stoomboot: different libs
+        # prepend alternatives in path
+        PATH=$HOME/bin_stbc/bin:$HOME/local/bin:$PATH
+        ;;  
+    *)
+        echo "Unknown machine: no special path..."
+        ;;
+esac
+
 # User specific environment and startup programs
-PATH=$HOME/local/bin:$PATH
 if [ -z ${PBS_O_PATH+x} ]; then
     export PATH=/data/hisparc/env/miniconda/bin:$PATH
 fi
