@@ -3,3 +3,5 @@
 	name = Tom Kooij
 [core]
 	editor = vim
+[push]
+	defaults = simple
