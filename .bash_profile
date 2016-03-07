@@ -30,3 +30,5 @@ fi
 
 alias cdtom='cd /data/hisparc/tom'
 alias envtom='source activate tom'
+alias cdsap='cd /data/hisparc/tom/sapphire/sapphire'
+alias cdlio='cd /data/hisparc/tom/lio-project'
