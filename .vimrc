@@ -104,3 +104,5 @@ set laststatus=2
 " // search for visually selected text
 vnoremap // y/<C-R>"<CR>
 
+" highlight search
+set hlsearch
