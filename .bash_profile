@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$HOME/bin:$PATH
+PATH=$HOME/local/bin:$PATH
 if [ -z ${PBS_O_PATH+x} ]; then
     export PATH=/data/hisparc/env/miniconda/bin:$PATH
 fi
