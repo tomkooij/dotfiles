@@ -1,0 +1,29 @@
+*.swp
+
+# Python
+*.pyc
+*.pyo
+
+# Coverage
+.coverage
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# png, jpg, pdf
+.pdf
+.jpeg
+.jpg
+.png
+
+# executables
+a.out
+.exe
+
+# archives
+.gz
+.zip
+.7z
