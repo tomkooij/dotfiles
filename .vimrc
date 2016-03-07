@@ -30,7 +30,9 @@ endif
 set guifont=Bitstream\ Vera\ Sans\ Mono:h10
 
 set t_Co=256
-colorscheme vividchalk
+" kalisi has visible linenumbers, visual select, search highlight on terminal
+colorscheme kalisi
+set background=dark
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
