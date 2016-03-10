@@ -31,7 +31,7 @@ set guifont=Bitstream\ Vera\ Sans\ Mono:h10
 
 set t_Co=256
 " kalisi has visible linenumbers, visual select, search highlight on terminal
-colorscheme kalisi
+colorscheme wombat
 set background=dark
 
 " Automatic reloading of .vimrc

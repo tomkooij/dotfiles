@@ -8,6 +8,7 @@ fi
 alias less='less --RAW-CONTROL-CHARS'
 export LS_OPTS='-h --color=auto'
 alias ls='ls ${LS_OPTS}'
+alias tmux="tmux -2"
 
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
