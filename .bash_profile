@@ -5,6 +5,14 @@ if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
 
+# make X11 forwarding through ssh -X work in tmux/screen
+# at each real login cache DISPLAY 
+# at each tmux/screen login get DISPLAY from cache
+if [ -z "$STY" -a -z "$TMUX" ]; then
+    echo $DISPLAY > ~/.display.txt
+else
+    export DISPLAY=`cat ~/.display.txt`
+                                fi
 MACHINE="$(/bin/uname -n)"
 
 case $MACHINE in
