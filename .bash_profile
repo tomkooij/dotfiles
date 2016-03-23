@@ -36,6 +36,9 @@ if [ -z ${PBS_O_PATH+x} ]; then
     export PATH=/data/hisparc/env/miniconda/bin:$PATH
 fi
 
+# add TeXLive to PATH
+export PATH=/data/hisparc/tom/texlive/bin/x86_64-linux:$PATH
+
 alias cdtom='cd /data/hisparc/tom'
 alias envtom='source activate tom'
 alias cdsap='cd /data/hisparc/tom/sapphire/sapphire'
