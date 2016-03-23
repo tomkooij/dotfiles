@@ -14,6 +14,9 @@ export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
 
+# perl local::lib
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+
 if [ -f ~/.bash.colors ]; then
     source ~/.bash.colors
 fi
