@@ -25,4 +25,4 @@ if [ -f ~/.git-prompt.sh ]; then
     source ~/.git-prompt.sh
     #export PS1='[\W]$(__git_ps1 "(%s)"): '
 fi
-export PS1='\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\W$(__git_ps1 " (%s)")]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
+export PS1='\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\]\w\n[\W$(__git_ps1 " (%s)")]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
