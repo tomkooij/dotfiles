@@ -36,6 +36,9 @@ if [ -z ${PBS_O_PATH+x} ]; then
     export PATH=/data/hisparc/env/miniconda/bin:$PATH
 fi
 
+# HDF5_DIR for PyTables dev
+export HDF5_DIR=/data/hisparc/tom/hdf5
+
 # add TeXLive to PATH
 export PATH=/data/hisparc/tom/texlive/bin/x86_64-linux:$PATH
 
