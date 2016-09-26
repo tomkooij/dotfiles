@@ -37,12 +37,14 @@ if [ -z ${PBS_O_PATH+x} ]; then
 fi
 
 # HDF5_DIR for PyTables dev
-export HDF5_DIR=/data/hisparc/tom/hdf5
+export HDF5_DIR=$CONDA_ENV_PATH
 
 # add TeXLive to PATH
 export PATH=/data/hisparc/tom/texlive/bin/x86_64-linux:$PATH
 
 alias cdtom='cd /data/hisparc/tom'
 alias envtom='source activate tom'
+alias envpy2='source activate py2'
+alias envpy3='source activate py3'
 alias cdsap='cd /data/hisparc/tom/sapphire/sapphire'
 alias cdlio='cd /data/hisparc/tom/lio-project'
