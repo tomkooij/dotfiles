@@ -16,11 +16,11 @@ else
 MACHINE="$(/bin/uname -n)"
 
 case $MACHINE in
-    lena*|tevere*)
+    lena-old-centos5*)
         # login[|2].nikhef.nl
         PATH=$HOME/local/bin:$PATH
         ;;
-    stbc*)
+    lena*|tevere*|stbc*)
         # stbc-[1-4].nikhef.nl
         # some binaries do not run on stoomboot: different libs
         # prepend alternatives in path
