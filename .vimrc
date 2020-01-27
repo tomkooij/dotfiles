@@ -10,7 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'statusline.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'sheerun/vim-wombat-scheme'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
